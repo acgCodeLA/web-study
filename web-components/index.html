@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web components</title>
+  <script src="./main.js" type="module"></script>
+  <script src="./bigbang.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <h1>Basic Web Components</h1>
+  </header>
+  <main>
+    <h2>Main Area</h2>
+    <h3>Web Component Below</h3>
+    <big-bang>
+      <h2 slot="title">Characters</h2>
+      <ul slot="list">
+        <li>Bruce Wayne</li>
+        <li>Clark Kent</li>
+        <li>Diana Prince</li>
+        <li>Barry Allen</li>
+        <li>Jonathan Kent</li>
+        <li>Kal-El</li>
+      </ul>
+    </big-bang>
+  </main>
+</body>
+</html>
