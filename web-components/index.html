@@ -4,6 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>web components</title>
+  <style>
+    h1 {
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+    h3 {
+      color: #777;
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background-color: #f0f0f0;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+    ::part(topper) {
+      color: #ff6347;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
   <script src="./main.js" type="module"></script>
   <script src="./bigbang.js" type="module"></script>
 </head>
@@ -25,6 +55,19 @@
         <li>Kal-El</li>
       </ul>
     </big-bang>
+    <h3>Web Component Above</h3>
   </main>
+  <footer>
+    <big-bang>
+      <h2 slot="title">Footer</h2>
+      <ul slot="list">
+        <li>About</li>
+        <li>Contact</li>
+        <li>Privacy</li>
+        <li>Terms</li>
+      </ul>
+    </big-bang>
+    <p>&copy; 2023 Web Components</p>
+  </footer>
 </body>
 </html>
